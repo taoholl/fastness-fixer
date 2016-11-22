@@ -208,10 +208,6 @@ svg.img-flex {
   width: 100%;
 }
 
-.media {
-  overflow: hidden;
-}
-
 .media-img, .media__img {
   float: left;
 }
@@ -227,14 +223,6 @@ svg.img-flex {
 .media-body, .media__body {
   overflow: hidden;
   min-width: 12em; /* Slightly less than 200px, responsiveness built in */
-}
-
-.icon {
-  display: inline-block;
-  position: relative;
-  background: transparent none no-repeat center center;
-  background-size: contain;
-  vertical-align: middle;
 }
 
 .i-16, .i--16 {
@@ -518,55 +506,6 @@ ol > li::before {
   text-decoration: none;
 }
 
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  padding: .375em .75em .42em;
-  background-color: #333;
-  border-radius: 8px;
-  border: 3px solid #333;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn:focus,
-.btn:hover {
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
-}
-
-.btn-light, .btn--light {
-  background-color: #e2e2e2;
-  border-color: #e2e2e2;
-  color: #000;
-}
-
-.btn-light:focus,
-.btn-light:hover,
-.btn--light:focus,
-.btn--light:hover {
-  background-color: #666;
-  border-color: #666;
-  color: #fff;
-}
-
-.btn-ghost,
-.btn--ghost {
-  background-color: transparent;
-  border-color: #333;
-  color: #000;
-}
-
-.btn-ghost:focus,
-.btn-ghost:hover,
-.btn--ghost:focus,
-.btn--ghost:hover {
-  background-color: #e2e2e2;
-  border-color: #000;
-  color: #000;
-}
-
 /* stylelint-disable no-descending-specificity */
 
 /*
@@ -626,10 +565,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-fieldset {
-  border: 1px solid;
 }
 
 legend {
@@ -912,36 +847,6 @@ select:focus {
 
 a:focus, [tabindex="0"]:focus {
   outline-offset: 3px;
-}
-
-.skip-links {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.skip-links > li::before {
-  content: none; /* Remove the bullets if nice lists is selected */
-}
-
-.skip-links a,
-.skip-links button {
-  padding: .5em .75em;
-  position: absolute;
-  top: -10em;
-  z-index: 10000; /* To make sure they're always on top */
-  background-color: #000;
-  border: 0;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.skip-links a:focus,
-.skip-links button:focus {
-  outline-offset: 3px;
-  top: 0;
 }
 
 [aria-busy="true"] {
